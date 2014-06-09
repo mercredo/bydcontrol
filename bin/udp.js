@@ -1,3 +1,5 @@
+/*upd-test*/
+
     var dgram = require("dgram");
     
         //init guiClient
