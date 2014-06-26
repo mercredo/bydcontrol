@@ -57,11 +57,11 @@ var BydSocket = function(ip, port){
         };
         
         this.createServer = function(serverType, cfg){
-//            if(this.socket.socket){ //deprecated
+//            if(this.socket.socket){ // deprecated
             if(this.socket.connected){
                 console.log("Creating subServer <" + serverType + "|i:" + cfg.incomingPort + ",o:" + cfg.outgoingPort + "> on " + this.ip + ":" + this.port + "...");
                 // socket.emit will only run once
-//                this.socket.on('connect', function() { //temporarily removed after migration to socket.io-v1.0 (function redundant?!)
+//                this.socket.on('connect', function() { //temporarily removed after migration to socket.io-v1.0; prevents from being run twice
 //                    console.log('socketonconnect');
                 // sends to socket.io server the host/port of oscServer
                 // and oscClient
@@ -121,16 +121,19 @@ var BydSocket = function(ip, port){
 
         // TODO: maybe to be outsourced to new oscclass
         this.sendOSC = function(cID, val, callback){
-            var osc = "";
+            var osc = "", obj, val;
             var _send = function(data){
                 console.log("\tover socket");
-                osc = "/" + data.oscData.cID + " " + data.oscData.value;
-                console.log('\toscOut:: ' + osc);                
-                cObj.socket.emit('oscOut', osc);
+                obj = data.oscData.cID;
+                val = data.oscData.value;
+//                osc = "/" + data.oscData.cID + " " + data.oscData.value;
+//                console.log('\toscOut:: ' + osc);                
+//                cObj.socket.emit('oscOut', osc);
+                console.log("send /" + data.oscData.cID + " " + data.oscData.value);
+                cObj.socket.emit('oscOut', "/" + obj, val + ""); //string-HACK for element.button.js; problematic?????; maybe use 0/1 
                 
-                callback(osc);
+                callback(obj, val);
             };
-//            console.log(uiType + " >> " + val + " >> ");
             var data = {"oscData":
                      {
 //                         uiType: uiType,

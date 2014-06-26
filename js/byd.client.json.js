@@ -166,13 +166,13 @@ var BydJSON = new function(){
                         case "vGroup":
                             console.log("PXML:addVGroup[" + "parent:" + cTargetHTML + "]");
                             iface.addVGroup(cTargetHTML);
-//                            console.log($(cTargetHTML).children().last().attr('id'));
-                            parseObj.parseNode(this.content,"#" + $(cTargetHTML).children().last().attr("id"));
+//                            console.log($(cTargetHTML).children().last().prev().attr('id'));
+                            parseObj.parseNode(this.content,"#" + $(cTargetHTML).children().last().prev().attr("id")); // added .prev() after vgroup-hgroup-fix (cleaner)
                             break;
                         case "hGroup":
                             console.log("PXML:addHGroup[" + "parent:" + cTargetHTML + "]");
                             iface.addHGroup(cTargetHTML);
-                            parseObj.parseNode(this.content,"#" + $(cTargetHTML).children().last().attr("id"));
+                            parseObj.parseNode(this.content,"#" + $(cTargetHTML).children().last().prev().attr("id")); // added .prev() after vgroup-hgroup-fix (cleaner)
                             break;
                     }; 
                });

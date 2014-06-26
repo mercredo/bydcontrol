@@ -165,7 +165,7 @@ var BydXML = new function(){
         this.parseNode = function(cParentNode, cTargetHTML){
             $(cParentNode).children().each(function(i){
                     console.log("NodeName: " + $(this)[0].nodeName);
-                    console.log(iface);
+//                    console.log(iface);
                     switch ($(this)[0].nodeName){
                         case "button":
                             console.log("PXML:addButton[" + "parent:" + cTargetHTML + "]");
@@ -190,13 +190,12 @@ var BydXML = new function(){
                         case "vGroup":
                             console.log("PXML:addVGroup[" + "parent:" + cTargetHTML + "]");
                             iface.addVGroup(cTargetHTML);
-//                            console.log($(cTargetHTML).children().last().attr('id'));
-                            parseObj.parseNode($(this),"#" + $(cTargetHTML).children().last().attr("id"));
+                            parseObj.parseNode($(this),"#" + $(cTargetHTML).children().last().prev().attr("id")); // added .prev() after vgroup-hgroup-fix (cleaner)
                             break;
                         case "hGroup":
                             console.log("PXML:addHGroup[" + "parent:" + cTargetHTML + "]");
                             iface.addHGroup(cTargetHTML);
-                            parseObj.parseNode($(this),"#" + $(cTargetHTML).children().last().attr("id"));
+                            parseObj.parseNode($(this),"#" + $(cTargetHTML).children().last().prev().attr("id")); // added .prev() after vgroup-hgroup-fix (cleaner)
                             break;
                     }; 
                });

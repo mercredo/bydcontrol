@@ -34,8 +34,9 @@ io.on('connection', function (socket) {
         });
         
         // send oscData to "real" application
-        socket.on("oscOut", function (obj) {
-            oscClient.send(obj);
+        socket.on("oscOut", function (obj, val) {
+            console.log("sendToApplication::" + obj + " " + val);
+            oscClient.send(obj, parseFloat(val));
         });
 
   });
