@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"/>
+        <meta content="Bydcontrol, Build Your own Digital Audio Controller Interfaces - responsive and mobile friendly -and use your browser to operate them." name="description">
+        <meta content="Audio Controller, JavaScript, framework, bydcontrol, web osc, osc " name="keywords">
+        <meta content="Hanjo Schumacher, mercredo@mobilemerc.com, and Bydcontrol contributors" name="author">
+        
+        <!-- Latest compiled and minified CSS -->
+        <!--
+	<link rel="stylesheet" href="path/to/bootstrap.css">
+        
+        <link rel="stylesheet" href="path/to/interface.css">
+	-->        
+        
+        <script src="jquery-1.11.0.min.js"></script>
+        <!--
+	<script src="path/to/bootstrap.min.js"></script>
+	-->
+        
+        <!--byd.client-->
+        <script src="client/misc.js"></script>
+        <script src="client/xml.js"></script>
+        <script src="client/json.js"></script>
+        <script src="client/socket.js"></script>
+        
+        <!--byd.gui-->
+        <script type="text/javascript" src="gui/interface.js"></script>
+        <script type="text/javascript" src="gui/element.js"></script>
+        <script type="text/javascript" src="gui/element.button.js"></script>
+        <script type="text/javascript" src="gui/element.knob.js"></script>
+        <script type="text/javascript" src="gui/element.slider.js"></script>
+        <script type="text/javascript" src="gui/element.xy.js"></script>
+        
+        <title>Bydcontrol</title>
+    </head>
+    <body style="overflow-x:hidden"> <!--Hack;TODO: fix interface elements buildup-->
+    
+            <!--page-content-->
+		<div id="iface0"></div>
+		<div class="author_info">
+			<a href="http://www.bydcontrol.com" target="_blank">www.bydcontrol.com</a> |
+			<a href="http://www.mobilemerc.com" target="_blank">www.mobilemerc.com</a>
+		</div>
+            
+            <script>
+                // initiate empty interface   
+                var iface = $('#iface0').BYD();
+
+		// add elements
+		iface.addKnob().addKnob().addKnob().addKnob();
+		iface.addVerticalSlider().addVerticalSlider().addVerticalSlider().addVerticalSlider().
+			addVerticalSlider().addVerticalSlider().addButton().addButton().addButton().
+			addXY().addXY().addHorizontalSlider().addHorizontalSlider();
+            </script>
+    </body>
+</html>
