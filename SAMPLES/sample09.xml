@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <byd version="0.35" author="mercredo" mail="bydcontrol@mobilemerc.com">
+<info>
+	<date>1405418761</date>
+</info>
+<iface>
+	<vGroup>
+		<hGroup>
+			<verticalSlider address="/kisanawah/Kisana/Loops/loop/level" min="0" max="6" value="0">verticalSlider</verticalSlider>
+			<verticalSlider address="/kisanawah/Kisana/Loops/loop48/note" min="0" max="11" value="0">verticalSlider</verticalSlider>
+			<verticalSlider address="/kisanawah/Kisana/Loops/loop60/note" min="0" max="11" value="0">verticalSlider</verticalSlider>
+			<verticalSlider address="/kisanawah/Kisana/Loops/loop72/note" min="0" max="11" value="0">verticalSlider</verticalSlider></hGroup>
+		<vGroup>
+			<horizontalSlider>horizontalSlider</horizontalSlider>
+			<horizontalSlider>horizontalSlider</horizontalSlider></vGroup>
+		<hGroup>
+			<knob>knob</knob>
+			<knob>knob</knob></hGroup></vGroup></iface>
+ </byd>

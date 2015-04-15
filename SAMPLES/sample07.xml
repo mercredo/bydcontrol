@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <byd version="0.35" author="mercredo" mail="bydcontrol@mobilemerc.com">
+<info>
+	<date>1394121519</date>
+</info>
+<iface>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<vGroup>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button></vGroup>
+	<vGroup>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button></vGroup>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<hGroup>
+		<vGroup>
+			<knob>knob</knob>
+			<knob>knob</knob>
+			<knob>knob</knob></vGroup>
+		<vGroup>
+			<knob>knob</knob>
+			<knob>knob</knob>
+			<knob>knob</knob></vGroup>
+		<vGroup>
+			<knob>knob</knob>
+			<knob>knob</knob>
+			<knob>knob</knob></vGroup></hGroup>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<vGroup>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button></vGroup>
+	<vGroup>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button></vGroup>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider></iface>
+ </byd>

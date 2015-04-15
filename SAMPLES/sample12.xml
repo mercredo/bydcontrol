@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <byd version="0.35" author="mercredo" mail="bydcontrol@mobilemerc.com">
+<info>
+	<date>1393503825</date>
+</info>
+<iface>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<verticalSlider>verticalSlider</verticalSlider>
+	<vGroup>
+		<knob>knob</knob>
+		<knob>knob</knob>
+		<knob>knob</knob></vGroup>
+	<vGroup>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button></vGroup>
+	<vGroup>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<button>button</button>
+		<hGroup>
+			<vGroup>
+				<button>button</button>
+				<button>button</button>
+				<button>button</button></vGroup></hGroup></vGroup>
+	<button>button</button>
+	<button>button</button>
+	<button>button</button>
+	<button>button</button>
+	<button>button</button></iface>
+ </byd>
