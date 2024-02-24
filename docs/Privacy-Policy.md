@@ -15,5 +15,5 @@ Bydcontrol does not collect personal identifiable information.
 
 # What Android permissions are required?
 
-* **Internet** (Keepass2Android regular only): Currently required to interact and create OSC interfaces. The free service used here is part of mobilemerc.com.
+* **Internet**: Currently required to interact and create OSC interfaces. The free service used here is part of mobilemerc.com.
 * **Storage**: Required to allow the user to read/store Bydcontrol layouts on the device locally.
