@@ -1,9 +1,6 @@
 # Who we are
 
 Hanjo Schumacher
-Hofmeierstraße 10
-97074 Würzburg
-Germany
 
 is the author of Bydcontrol.
 
